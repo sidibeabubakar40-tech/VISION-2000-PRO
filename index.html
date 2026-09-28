@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Vision 2000 — Optique, lunettes de vue et solaires. Découvrez nos collections, services et conseils.">
-<meta name="theme-color" content="#121210">
+<meta name="description" content="Vision 2000 — Maison d'optique moderne en Côte d'Ivoire. Montures, solaire, conseil et accompagnement personnalisé.">
+<meta name="theme-color" content="#11110f">
 <title>Vision 2000 | Votre vision. Votre style.</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,76 +12,107 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="topbar">VISION 2000 — L'optique autrement <span>Conseil • Style • Confort</span></div>
+<div class="topbar"><span>VISION 2000</span> — L'optique autrement <span class="topbar-right">Conseil • Style • Confort</span></div>
+
 <header class="header">
 <a class="brand" href="#accueil" aria-label="Vision 2000"><span class="brand-mark">V</span><span><b>VISION</b><small>2000</small></span></a>
 <nav id="nav" aria-label="Navigation principale">
-<a href="#collections">Collections</a><a href="#services">Services</a><a href="#conseils">Conseils</a><a href="#apropos">À propos</a><a href="#contact">Contact</a>
+<a href="#collections">Collections</a><a href="#services">Services</a><a href="#conseils">Conseils</a><a href="#apropos">Maison</a><a href="#contact">Contact</a>
 </nav>
-<a class="btn btn-dark header-cta" href="#contact">Prendre contact</a>
+<a class="btn btn-dark header-cta" href="#contact">Prendre rendez-vous</a>
 <button class="menu" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
 </header>
 
 <main>
 <section id="accueil" class="hero">
 <div class="hero-copy">
-<span class="eyebrow">Maison d'optique</span>
+<span class="eyebrow">Maison d'optique • Côte d'Ivoire</span>
 <h1>Votre vision.<br><em>Votre style.</em><br>Votre identité.</h1>
-<p>Vision 2000 imagine une expérience optique moderne : des montures choisies avec exigence, un conseil humain et une relation client de proximité.</p>
-<div class="actions"><a class="btn btn-gold" href="#collections">Découvrir les collections</a><a class="text-link" href="#contact">Nous trouver <span>→</span></a></div>
+<p>Une nouvelle expérience de l'optique : des montures choisies avec exigence, un accompagnement humain et une attention particulière portée à votre visage, votre confort et votre quotidien.</p>
+<div class="actions"><a class="btn btn-gold" href="#collections">Découvrir la collection</a><a class="text-link" href="#contact">Parler à un conseiller <span>→</span></a></div>
 <div class="hero-points"><span>✓ Conseil personnalisé</span><span>✓ Vue & solaire</span><span>✓ Suivi client</span></div>
 </div>
 <div class="hero-art">
-<div class="orb"></div><div class="glasses glasses-a"><span></span><span></span></div><div class="glasses glasses-b"><span></span><span></span></div>
-<div class="hero-card"><small>ÉDITION</small><strong>Signature</strong><span>VISION 2000</span></div>
+<div class="orb"></div><div class="hero-label">ÉDITION<br><strong>VISION 2000</strong></div>
+<div class="glasses glasses-a"><span></span><span></span></div><div class="glasses glasses-b"><span></span><span></span></div>
+<div class="hero-card"><small>SÉLECTION</small><strong>Signature</strong><span>À découvrir en boutique</span></div>
 </div>
 </section>
 
-<section class="trust"><div><strong>QUALITÉ</strong><span>Des montures sélectionnées avec soin.</span></div><div><strong>CONSEIL</strong><span>Une orientation adaptée à votre visage.</span></div><div><strong>PROXIMITÉ</strong><span>Une équipe disponible pour vous.</span></div></section>
+<section class="trust">
+<div><strong>01 — EXPERTISE</strong><span>Un conseil pensé autour de votre vision.</span></div>
+<div><strong>02 — STYLE</strong><span>Des formes qui accompagnent votre personnalité.</span></div>
+<div><strong>03 — PROXIMITÉ</strong><span>Une relation simple avant, pendant et après l'achat.</span></div>
+</section>
 
-<section id="collections" class="section">
-<div class="section-head"><div><span class="eyebrow">01 — Collections</span><h2>Une monture pour<br><em>chaque personnalité.</em></h2></div><a class="text-link" href="#contact">Demander le catalogue →</a></div>
-<div class="products">
-<article class="product"><div class="product-image p1"><div class="frame"></div><span>01</span><b>ÉLÉGANCE</b></div><div class="product-info"><div><h3>Élégance</h3><p>Des lignes intemporelles et faciles à porter.</p></div><a href="#contact">Explorer →</a></div></article>
-<article class="product"><div class="product-image p2"><div class="frame"></div><span>02</span><b>SIGNATURE</b></div><div class="product-info"><div><h3>Signature</h3><p>Des formes qui affirment votre caractère.</p></div><a href="#contact">Explorer →</a></div></article>
-<article class="product"><div class="product-image p3"><div class="frame"></div><span>03</span><b>SOLAIRE</b></div><div class="product-info"><div><h3>Solaire</h3><p>Style et protection pour vos journées.</p></div><a href="#contact">Explorer →</a></div></article>
+<section id="collections" class="section collection-section">
+<div class="section-head"><div><span class="eyebrow">01 — Collections</span><h2>La monture qui<br><em>vous ressemble.</em></h2></div><a class="text-link" href="#contact">Demander le catalogue →</a></div>
+
+<div class="filter-bar" aria-label="Filtrer les collections">
+<button class="filter active" data-filter="all">Tout</button><button class="filter" data-filter="vue">Vue</button><button class="filter" data-filter="solaire">Solaire</button><button class="filter" data-filter="premium">Signature</button>
 </div>
+
+<div class="products">
+<article class="product" data-category="vue"><div class="product-image p1"><div class="frame"></div><span>01</span><b>VUE</b></div><div class="product-info"><div><h3>Élégance</h3><p>Lignes intemporelles et faciles à porter.</p></div><a href="#contact">Demander →</a></div></article>
+<article class="product" data-category="premium"><div class="product-image p2"><div class="frame"></div><span>02</span><b>SIGNATURE</b></div><div class="product-info"><div><h3>Signature</h3><p>Une silhouette qui affirme votre caractère.</p></div><a href="#contact">Demander →</a></div></article>
+<article class="product" data-category="solaire"><div class="product-image p3"><div class="frame"></div><span>03</span><b>SOLAIRE</b></div><div class="product-info"><div><h3>Solaires</h3><p>Protection et style pour vos journées.</p></div><a href="#contact">Demander →</a></div></article>
+<article class="product" data-category="vue"><div class="product-image p4"><div class="frame"></div><span>04</span><b>ESSENTIEL</b></div><div class="product-info"><div><h3>Essentiel</h3><p>Un style quotidien, sobre et contemporain.</p></div><a href="#contact">Demander →</a></div></article>
+<article class="product" data-category="premium"><div class="product-image p5"><div class="frame"></div><span>05</span><b>CARACTÈRE</b></div><div class="product-info"><div><h3>Caractère</h3><p>Des volumes plus audacieux pour se démarquer.</p></div><a href="#contact">Demander →</a></div></article>
+<article class="product" data-category="solaire"><div class="product-image p6"><div class="frame"></div><span>06</span><b>ÉVASION</b></div><div class="product-info"><div><h3>Évasion</h3><p>Une signature solaire pour vos escapades.</p></div><a href="#contact">Demander →</a></div></article>
+</div>
+<p class="catalog-note">Catalogue présenté comme vitrine digitale. Disponibilités, coloris et tarifs à confirmer en boutique.</p>
 </section>
 
 <section id="services" class="dark-section">
 <div class="section-head"><div><span class="eyebrow light">02 — Savoir-faire</span><h2>Plus que des lunettes.<br><em>Une expérience.</em></h2></div></div>
 <div class="services">
-<article><span>01</span><h3>Conseil personnalisé</h3><p>Choisir une monture, c'est aussi trouver une forme qui vous ressemble. Notre équipe vous accompagne.</p></article>
-<article><span>02</span><h3>Lunettes de vue</h3><p>Des solutions pensées pour votre quotidien, votre confort et votre style.</p></article>
-<article><span>03</span><h3>Lunettes solaires</h3><p>Une sélection pour associer protection, confort et expression personnelle.</p></article>
-<article><span>04</span><h3>Suivi client</h3><p>Une relation de proximité avant, pendant et après votre achat.</p></article>
+<article><span>01</span><h3>Conseil & visagisme</h3><p>Nous vous aidons à choisir une forme, une couleur et une silhouette cohérentes avec votre visage et votre style.</p></article>
+<article><span>02</span><h3>Lunettes de vue</h3><p>Des solutions adaptées à vos usages quotidiens, avec un accompagnement dans le choix de votre équipement.</p></article>
+<article><span>03</span><h3>Lunettes solaires</h3><p>Des montures solaires pour associer protection, confort et expression personnelle.</p></article>
+<article><span>04</span><h3>Suivi & entretien</h3><p>Ajustement, conseils d'entretien et accompagnement après votre achat pour garder vos lunettes confortables.</p></article>
 </div>
 </section>
 
+<section class="experience section">
+<div class="experience-visual"><span>V2</span><strong>LE REGARD<br>COMME SIGNATURE.</strong></div>
+<div><span class="eyebrow">03 — Expérience</span><h2>Choisir ses lunettes<br><em>devient simple.</em></h2><p>Notre parcours est pensé comme une expérience : découvrir, essayer, être conseillé puis choisir avec confiance.</p>
+<div class="steps"><div><b>01</b><span>Découvrez</span><small>Parcourez nos univers.</small></div><div><b>02</b><span>Essayez</span><small>Comparez les formes.</small></div><div><b>03</b><span>Choisissez</span><small>Faites-vous accompagner.</small></div></div></div>
+</section>
+
 <section id="conseils" class="section advice">
-<div class="section-head"><div><span class="eyebrow">03 — Conseils</span><h2>Bien choisir,<br><em>mieux voir.</em></h2></div></div>
+<div class="section-head"><div><span class="eyebrow">04 — Conseils</span><h2>Bien choisir,<br><em>mieux voir.</em></h2></div></div>
 <div class="advice-grid">
-<article><span>01</span><h3>Quelle monture pour mon visage ?</h3><p>Ronde, carrée, ovale ou rectangulaire : la bonne forme peut équilibrer vos traits et renforcer votre style.</p><a href="#contact">Recevoir un conseil →</a></article>
+<article><span>01</span><h3>Quelle monture pour mon visage ?</h3><p>Ronde, carrée, ovale ou rectangulaire : la forme peut équilibrer vos traits et renforcer votre style.</p><a href="#contact">Recevoir un conseil →</a></article>
 <article><span>02</span><h3>Vue ou solaire ?</h3><p>Chaque usage mérite une solution adaptée. Parlez-nous de votre quotidien et de vos habitudes.</p><a href="#contact">Parler à un conseiller →</a></article>
-<article><span>03</span><h3>Entretenir ses lunettes</h3><p>Nettoyage doux, étui adapté et manipulation par les branches : quelques gestes prolongent leur confort.</p><a href="#contact">Nos conseils →</a></article>
+<article><span>03</span><h3>Comment entretenir ses lunettes ?</h3><p>Nettoyage doux, étui adapté et manipulation par les branches : quelques gestes prolongent leur confort.</p><a href="#contact">Nos conseils →</a></article>
 </div>
 </section>
 
 <section id="apropos" class="about section">
-<div class="about-visual"><div class="about-circle"></div><div class="about-badge">VISION<br><strong>2000</strong></div></div>
-<div class="about-copy"><span class="eyebrow">04 — À propos</span><h2>Une vision moderne<br><em>de l'optique.</em></h2><p>Vision 2000 porte une ambition simple : rendre l'expérience optique plus claire, plus élégante et plus proche des clients.</p><p>Notre identité s'appuie sur trois piliers : la qualité des produits, la qualité du conseil et une expérience digitale cohérente.</p><div class="stats"><div><strong>01</strong><span>Conseil</span></div><div><strong>02</strong><span>Confort</span></div><div><strong>03</strong><span>Style</span></div></div></div>
+<div class="about-visual"><div class="about-circle"></div><div class="about-badge">VISION<br><strong>2000</strong></div><div class="about-word">REGARD</div></div>
+<div class="about-copy"><span class="eyebrow">05 — La maison</span><h2>Une vision moderne<br><em>de l'optique.</em></h2><p>Vision 2000 porte une ambition simple : proposer une expérience optique plus claire, plus élégante et plus proche des clients.</p><p>Notre direction digitale associe les codes premium de la mode, la pédagogie de l'optique et les usages qui facilitent la prise de contact.</p><div class="stats"><div><strong>01</strong><span>Conseil</span></div><div><strong>02</strong><span>Confort</span></div><div><strong>03</strong><span>Style</span></div></div></div>
 </section>
 
-<section class="cta"><span class="eyebrow">Votre prochaine monture</span><h2>Prêt à trouver<br><em>votre nouvelle vision ?</em></h2><p>Écrivez-nous pour demander le catalogue, poser une question ou préparer votre visite.</p><a class="btn btn-gold" href="#contact">Commencer la conversation</a></section>
+<section class="faq section">
+<div class="section-head"><div><span class="eyebrow">06 — FAQ</span><h2>Les réponses<br><em>essentielles.</em></h2></div></div>
+<div class="faq-list">
+<details><summary>Comment choisir une monture ? <span>+</span></summary><p>Le choix dépend notamment de la forme du visage, de vos habitudes, de votre correction et de votre style. Un conseiller peut vous guider en boutique.</p></details>
+<details><summary>Proposez-vous des lunettes de soleil ? <span>+</span></summary><p>Oui. La collection solaire est pensée autour de la protection, du confort et du style. Les modèles disponibles peuvent être confirmés directement avec Vision 2000.</p></details>
+<details><summary>Comment demander le catalogue ? <span>+</span></summary><p>Utilisez WhatsApp ou le formulaire ci-dessous. Nous pourrons ensuite vous orienter vers les modèles disponibles.</p></details>
+<details><summary>Puis-je préparer ma visite à distance ? <span>+</span></summary><p>Oui. Envoyez votre demande, vos préférences et, si nécessaire, une photo de votre ordonnance. Les informations définitives seront confirmées par l'équipe.</p></details>
+</div>
+</section>
+
+<section class="cta"><span class="eyebrow">Votre prochaine monture</span><h2>Prêt à trouver<br><em>votre nouvelle vision ?</em></h2><p>Demandez le catalogue, préparez une visite ou échangez avec un conseiller Vision 2000.</p><a class="btn btn-gold" href="#contact">Commencer la conversation</a></section>
 
 <section id="contact" class="contact section">
-<div><span class="eyebrow">05 — Contact</span><h2>Parlons de<br><em>votre projet.</em></h2><p>Pour le moment, les coordonnées commerciales définitives peuvent être ajoutées ici dès validation par Vision 2000.</p>
-<div class="contact-cards"><a href="https://wa.me/?text=Bonjour%20Vision%202000%2C%20je%20souhaite%20des%20informations." target="_blank" rel="noopener"><span>WhatsApp</span><strong>Écrire à Vision 2000 →</strong></a><a href="#contact"><span>Catalogue</span><strong>Demander les modèles →</strong></a></div></div>
-<form id="contactForm"><label>Nom<input name="nom" required placeholder="Votre nom"></label><label>Téléphone<input name="telephone" required placeholder="+225 ..."></label><label>Votre demande<textarea name="message" required rows="5" placeholder="Je souhaite..."></textarea></label><button class="btn btn-dark" type="submit">Envoyer sur WhatsApp →</button><small>Le formulaire ouvre WhatsApp avec votre message prérempli.</small></form>
+<div><span class="eyebrow">07 — Contact</span><h2>Parlons de<br><em>votre regard.</em></h2><p>Les coordonnées commerciales définitives pourront être remplacées dès validation par Vision 2000. En attendant, la demande est préparée directement pour WhatsApp.</p>
+<div class="contact-cards"><a href="https://wa.me/?text=Bonjour%20Vision%202000%2C%20je%20souhaite%20des%20informations." target="_blank" rel="noopener"><span>WhatsApp</span><strong>Écrire à Vision 2000 →</strong></a><a href="#collections"><span>Catalogue</span><strong>Voir les collections →</strong></a></div></div>
+<form id="contactForm"><label>Nom<input name="nom" required placeholder="Votre nom"></label><label>Téléphone<input name="telephone" required placeholder="+225 ..."></label><label>Votre besoin<select name="besoin"><option>Choisir une monture</option><option>Lunettes de vue</option><option>Lunettes solaires</option><option>Conseil visagisme</option><option>Demander le catalogue</option><option>Autre demande</option></select></label><label>Votre demande<textarea name="message" required rows="5" placeholder="Expliquez-nous votre besoin..."></textarea></label><button class="btn btn-dark" type="submit">Envoyer sur WhatsApp →</button><small>Votre message sera préparé dans WhatsApp. Aucune donnée n'est envoyée à un serveur par ce site.</small></form>
 </section>
 </main>
 
-<footer class="footer"><div class="footer-brand"><span class="brand-mark">V</span><div><b>VISION 2000</b><p>Votre vision. Votre style.</p></div></div><div><b>Navigation</b><a href="#collections">Collections</a><a href="#services">Services</a><a href="#conseils">Conseils</a></div><div><b>Contact</b><a href="#contact">Nous contacter</a><a href="https://wa.me/?text=Bonjour%20Vision%202000" target="_blank" rel="noopener">WhatsApp</a></div><div><b>Réseaux</b><span class="muted">Liens sociaux à connecter</span></div><div class="copyright">© 2026 Vision 2000. Tous droits réservés.</div></footer>
+<footer class="footer"><div class="footer-brand"><span class="brand-mark">V</span><div><b>VISION 2000</b><p>Votre vision. Votre style.</p></div></div><div><b>Explorer</b><a href="#collections">Collections</a><a href="#services">Services</a><a href="#conseils">Conseils</a></div><div><b>Contact</b><a href="#contact">Nous contacter</a><a href="https://wa.me/?text=Bonjour%20Vision%202000" target="_blank" rel="noopener">WhatsApp</a></div><div><b>Maison</b><a href="#apropos">Notre approche</a><a href="#faq">FAQ</a></div><div class="copyright">© 2026 Vision 2000. Tous droits réservés.</div></footer>
 <script src="script.js"></script>
 </body>
 </html>
