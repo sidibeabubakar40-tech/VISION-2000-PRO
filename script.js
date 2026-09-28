@@ -59,3 +59,7 @@ document.querySelectorAll(".product, .services article, .advice-grid article, .a
 document.querySelector(".copyright")?.replaceChildren(
   "© " + new Date().getFullYear() + " Vision 2000. Tous droits réservés."
 );
+
+
+// V2 catalogue filters
+ document.querySelectorAll(".filter").forEach((btn)=>btn.addEventListener("click",()=>{document.querySelectorAll(".filter").forEach((b)=>b.classList.remove("active"));btn.classList.add("active");const filter=btn.dataset.filter;document.querySelectorAll(".product").forEach((card)=>{card.hidden=filter!=="all"&&card.dataset.category!==filter})}));
