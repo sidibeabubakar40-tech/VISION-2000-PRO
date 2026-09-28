@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Vision 2000 — Optique, lunettes de vue et solaires. Découvrez nos collections et nos services.">
+<title>Vision 2000 — L'optique autrement</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <a class="brand" href="#accueil" aria-label="Vision 2000 accueil"><span class="brand-mark">V</span><span><strong>VISION</strong><small>2000</small></span></a>
+  <nav id="nav">
+    <a href="#accueil">Accueil</a><a href="#collections">Collections</a><a href="#services">Services</a><a href="#apropos">À propos</a><a href="#contact">Contact</a>
+  </nav>
+  <a class="btn btn-dark header-cta" href="https://wa.me/?text=Bonjour%20Vision%202000%2C%20je%20souhaite%20avoir%20des%20informations." target="_blank" rel="noopener">Nous contacter</a>
+  <button class="menu" aria-label="Ouvrir le menu">☰</button>
+</header>
+
+<main>
+<section id="accueil" class="hero">
+  <div class="hero-copy">
+    <span class="eyebrow">L'optique autrement</span>
+    <h1>Votre vision.<br><em>Votre style.</em><br>Votre identité.</h1>
+    <p>Découvrez une sélection de lunettes pensée pour associer confort, élégance et personnalité.</p>
+    <div class="actions"><a class="btn btn-gold" href="#collections">Découvrir la collection</a><a class="text-link" href="#contact">Trouver un magasin <span>→</span></a></div>
+  </div>
+  <div class="hero-art" aria-label="Collection de lunettes">
+    <div class="orb"></div><div class="glasses glasses-a"><span></span><span></span></div>
+    <div class="glasses glasses-b"><span></span><span></span></div>
+    <div class="hero-card"><small>COLLECTION</small><strong>Signature</strong><span>2026</span></div>
+  </div>
+</section>
+
+<section class="trust"><div><strong>Qualité</strong><span>Des montures sélectionnées avec exigence</span></div><div><strong>Conseil</strong><span>Un accompagnement adapté à votre style</span></div><div><strong>Proximité</strong><span>Une équipe à votre écoute</span></div></section>
+
+<section id="collections" class="section">
+  <div class="section-head"><div><span class="eyebrow">Nos collections</span><h2>Trouvez la monture<br><em>qui vous ressemble.</em></h2></div><a class="text-link" href="#contact">Voir toutes les collections →</a></div>
+  <div class="products">
+    <article class="product"><div class="product-image p1"><div class="frame"></div><span>01</span></div><div class="product-info"><div><h3>Élégance</h3><p>Montures intemporelles</p></div><b>Explorer →</b></div></article>
+    <article class="product"><div class="product-image p2"><div class="frame"></div><span>02</span></div><div class="product-info"><div><h3>Signature</h3><p>Design & caractère</p></div><b>Explorer →</b></div></article>
+    <article class="product"><div class="product-image p3"><div class="frame"></div><span>03</span></div><div class="product-info"><div><h3>Solaire</h3><p>Style & protection</p></div><b>Explorer →</b></div></article>
+  </div>
+</section>
+
+<section id="services" class="dark-section">
+  <div class="section-head"><div><span class="eyebrow light">Notre savoir-faire</span><h2>Plus que des lunettes.<br><em>Une expérience.</em></h2></div></div>
+  <div class="services">
+    <article><span>01</span><h3>Conseil personnalisé</h3><p>Nous vous accompagnons dans le choix d'une monture adaptée à votre visage, votre style et vos besoins.</p></article>
+    <article><span>02</span><h3>Lunettes de vue</h3><p>Des solutions pensées pour votre confort visuel et votre quotidien.</p></article>
+    <article><span>03</span><h3>Lunettes solaires</h3><p>Des modèles qui associent protection, confort et expression personnelle.</p></article>
+    <article><span>04</span><h3>Suivi client</h3><p>Une relation de proximité avant, pendant et après votre achat.</p></article>
+  </div>
+</section>
+
+<section id="apropos" class="about section">
+  <div class="about-visual"><div class="about-badge">VISION<br><strong>2000</strong></div></div>
+  <div class="about-copy"><span class="eyebrow">À propos</span><h2>Une vision moderne<br><em>de l'optique.</em></h2><p>Vision 2000 ambitionne de construire une marque d'optique moderne, accessible et profondément connectée à ses clients.</p><p>Notre approche repose sur trois piliers : la qualité des produits, la qualité du conseil et une expérience client simple et élégante.</p><a class="btn btn-dark" href="#contact">Parler à notre équipe</a></div>
+</section>
+
+<section class="cta"><span class="eyebrow">Votre prochaine monture</span><h2>Prêt à trouver<br><em>votre nouvelle vision ?</em></h2><a class="btn btn-gold" href="https://wa.me/?text=Bonjour%20Vision%202000%2C%20je%20souhaite%20d%C3%A9couvrir%20vos%20lunettes." target="_blank" rel="noopener">Écrire sur WhatsApp</a></section>
+
+<section id="contact" class="contact section">
+  <div><span class="eyebrow">Contact</span><h2>Parlons de<br><em>votre projet.</em></h2><p>Une question sur une monture, une collection ou nos services ? Notre équipe est disponible.</p></div>
+  <form id="contactForm">
+    <label>Nom<input required name="nom" placeholder="Votre nom"></label>
+    <label>Téléphone<input required name="telephone" placeholder="+225 ..."></label>
+    <label>Message<textarea required name="message" rows="5" placeholder="Comment pouvons-nous vous aider ?"></textarea></label>
+    <button class="btn btn-dark" type="submit">Envoyer la demande →</button>
+  </form>
+</section>
+</main>
+
+<footer><div class="brand footer-brand"><span class="brand-mark">V</span><span><strong>VISION</strong><small>2000</small></span></div><p>© 2026 Vision 2000. Tous droits réservés.</p><div><a href="#accueil">Accueil</a><a href="#collections">Collections</a><a href="#contact">Contact</a></div></footer>
+<script src="script.js"></script>
+</body></html>
