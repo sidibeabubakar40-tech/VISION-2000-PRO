@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sidibeabubakar40-tech.github.io/VISION-2000-PRO/sitemap.xml
