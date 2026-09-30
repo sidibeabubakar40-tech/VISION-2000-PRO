@@ -19,7 +19,7 @@
 <nav id="nav" aria-label="Navigation principale">
 <a href="#collections">Collections</a><a href="#catalogue-verres">Catalogue</a><a href="#services">Services</a><a href="#conseils">Conseils</a><a href="#apropos">Maison</a><a href="#contact">Contact</a>
 </nav>
-<a class="btn btn-dark header-cta" href="#contact">Prendre rendez-vous</a>
+<button class="cart-button" id="cartButton" type="button" aria-label="Ouvrir le panier"><span class="cart-icon">🛒</span><span>Panier</span><b id="cartCount">0</b></button><a class="btn btn-dark header-cta" href="#contact">Prendre rendez-vous</a>
 <button class="menu" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
 </header>
 
@@ -127,6 +127,19 @@
 <form id="contactForm"><label>Nom<input name="nom" required placeholder="Votre nom"></label><label>Téléphone<input name="telephone" required placeholder="+225 ..."></label><label>Votre besoin<select name="besoin"><option>Choisir une monture</option><option>Lunettes de vue</option><option>Lunettes solaires</option><option>Conseil visagisme</option><option>Demander le catalogue</option><option>Autre demande</option></select></label><label>Votre demande<textarea name="message" required rows="5" placeholder="Expliquez-nous votre besoin..."></textarea></label><button class="btn btn-dark" type="submit">Envoyer sur WhatsApp →</button><small>Votre message sera préparé dans WhatsApp. Aucune donnée n'est envoyée à un serveur par ce site.</small></form>
 </section>
 </main>
+
+<aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <div class="cart-panel" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+    <div class="cart-head"><div><span class="eyebrow">Votre sélection</span><h2 id="cartTitle">Mon panier</h2></div><button class="cart-close" id="cartClose" type="button" aria-label="Fermer">×</button></div>
+    <div id="cartItems" class="cart-items"><div class="cart-empty">Votre panier est vide.<br><span>Ajoutez une monture pour commencer.</span></div></div>
+    <div class="cart-summary">
+      <div><span>Sous-total</span><strong id="cartTotal">0 FCFA</strong></div>
+      <button class="btn btn-gold cart-checkout" id="cartCheckout" type="button">Acheter / Commander →</button>
+      <small>La commande sera préparée sur WhatsApp pour confirmation de la disponibilité et du prix.</small>
+    </div>
+  </div>
+</aside>
 
 <footer class="footer"><div class="footer-brand"><span class="brand-mark">V</span><div><b>VISION 2000</b><p>Votre vision. Votre style.</p></div></div><div><b>Explorer</b><a href="#collections">Collections</a><a href="#services">Services</a><a href="#conseils">Conseils</a></div><div><b>Contact</b><a href="#contact">Nous contacter</a><a href="https://wa.me/?text=Bonjour%20Vision%202000" target="_blank" rel="noopener">WhatsApp</a></div><div><b>Maison</b><a href="#apropos">Notre approche</a><a href="#faq">FAQ</a></div><div class="copyright">© 2026 Vision 2000. Tous droits réservés.</div></footer>
 <script src="script.js"></script>
