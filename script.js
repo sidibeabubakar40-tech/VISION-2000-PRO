@@ -90,3 +90,14 @@ const visionWhatsAppNumber = "2250768714275";
 document.querySelectorAll('a[href="https://wa.me/?text=Bonjour%20Vision%202000%2C%20je%20souhaite%20des%20informations."]').forEach(function(link) {
   link.href = "https://wa.me/" + visionWhatsAppNumber + "?text=" + encodeURIComponent("Bonjour Vision 2000, je souhaite des informations.");
 });
+
+/* Catalogue 100 montures — rendu éditorial */
+const catalog100Grid=document.getElementById("catalog100Grid");
+if(catalog100Grid){
+  const variants=["#B58A45","#69737B","#0B2D5B","#B96D76","#176AA5","#4B5964","#76563E","#9A3C3C","#173B67","#C6A878"];
+  function frame(i){
+    const stroke=variants[i%variants.length];
+    return '<svg viewBox="0 0 220 120" role="img" aria-label="Monture '+(i+1)+'"><g fill="none" stroke="'+stroke+'" stroke-width="5" stroke-linecap="round"><ellipse cx="66" cy="62" rx="43" ry="32"/><ellipse cx="154" cy="62" rx="43" ry="32"/><path d="M109 60 C114 55 118 55 123 60"/><path d="M23 56 C12 48 9 42 5 35"/><path d="M197 56 C208 48 211 42 215 35"/></g></svg>';
+  }
+  catalog100Grid.innerHTML=Array.from({length:100},(_,i)=>'<article class="catalog-100-item"><span class="tag">VISION 2000</span>'+frame(i)+'<span class="num">'+String(i+1).padStart(2,"0")+'</span></article>').join("");
+}
