@@ -59,3 +59,118 @@ h1,h2{color:var(--vision-navy)!important}em{color:var(--vision-blue)!important}p
 .footer{background:var(--vision-navy)!important}.footer p,.footer a,.footer .muted{color:#C7D8E8!important}
 .faq-list details,.glass-family-head,.glass-item{border-color:var(--vision-border)!important}.glass-catalog{background:#F4F6F8!important}
 .glass-family{background:#fff!important;border-color:var(--vision-border)!important}.glass-family-head span{color:var(--vision-blue)!important}
+
+
+/* VISION 2000 — UI/UX V4 : disposition premium + responsive */
+:root{
+  --v-navy:#0B2D5B;--v-blue:#00AEEF;--v-sky:#E8F4FF;--v-border:#D9E7F2;
+  --v-text:#5E7185;--v-bg:#fff;--v-soft:#F4F7FA;--v-radius:18px;
+  --v-shadow:0 18px 50px rgba(11,45,91,.08);
+}
+html{scroll-padding-top:92px}
+body{overflow-x:hidden;line-height:1.5}
+.topbar{min-height:34px;padding:9px 6vw;font-size:9px}
+.header{height:76px;padding:0 6vw;gap:25px}
+.header nav{gap:25px;flex:1;justify-content:center}
+.header-cta{white-space:nowrap}
+.brand{flex:0 0 auto}
+.hero{max-width:1440px;margin:auto;min-height:680px;padding:76px 6vw 82px;gap:7vw}
+.hero-copy{max-width:650px}
+.hero-copy>p{max-width:590px}
+.hero-art{height:550px;border-radius:34px;box-shadow:var(--v-shadow)}
+.actions{flex-wrap:wrap}
+.trust{max-width:1320px;margin:0 auto;padding:0 6vw}
+.trust div{padding:28px 22px}
+.section,.dark-section{padding-left:6vw;padding-right:6vw}
+.section{max-width:1440px;margin:auto}
+.section-head{gap:30px}
+.section-head h2{margin-bottom:0}
+.products{grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.product{min-width:0}
+.product-image{height:390px;border-radius:var(--v-radius);box-shadow:0 8px 30px rgba(11,45,91,.06);transition:transform .3s,box-shadow .3s}
+.product:hover .product-image{transform:translateY(-5px);box-shadow:var(--v-shadow)}
+.product-info{padding:18px 4px}
+.product-info h3{font-size:21px}
+.product-info p{max-width:260px}
+.filter-bar{margin-bottom:30px}
+.dark-section{padding-top:95px;padding-bottom:95px}
+.services{max-width:1200px;margin:42px auto 0;grid-template-columns:repeat(4,1fr);border-radius:16px;overflow:hidden}
+.services article{padding:32px 28px;min-height:250px}
+.experience{max-width:1440px;margin:auto;padding:100px 6vw}
+.experience-visual{border-radius:var(--v-radius);box-shadow:var(--v-shadow)}
+.advice-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.advice-grid article{padding:28px 8px}
+.about{max-width:1440px;margin:auto}
+.about-visual{border-radius:var(--v-radius);box-shadow:var(--v-shadow)}
+.about-copy{max-width:600px}
+.stats{gap:55px}
+.faq{max-width:1200px}
+.faq-list{max-width:900px}
+.cta{padding:105px 6vw}
+.contact{max-width:1200px;margin:auto}
+.contact form{background:var(--v-soft);padding:32px;border-radius:var(--v-radius);box-shadow:var(--v-shadow)}
+.contact-cards a{transition:.25s;border-radius:12px}
+.contact-cards a:hover{transform:translateX(4px);border-color:var(--v-blue);box-shadow:0 10px 30px rgba(11,45,91,.06)}
+.footer{padding-left:6vw;padding-right:6vw}
+.glass-catalog{max-width:none!important;margin:55px calc(50% - 50vw)!important;padding:75px 6vw!important}
+.glass-catalog-grid{max-width:1200px;margin:auto;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.glass-family{border-radius:16px;box-shadow:0 8px 28px rgba(11,45,91,.05)}
+.glass-list{gap:0 28px}
+.glass-item{min-width:0}
+.reveal{transition:opacity .6s ease,transform .6s ease}
+@media(max-width:1100px){
+  .header nav{gap:15px}
+  .hero{gap:4vw}
+  .hero-art{height:500px}
+  .products{gap:18px}
+}
+@media(max-width:900px){
+  .header{height:72px}
+  .hero{grid-template-columns:1fr;min-height:auto;padding-top:55px}
+  .hero-copy{max-width:760px}
+  .hero-art{height:470px;max-width:720px;width:100%;margin:auto}
+  .products{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .services{grid-template-columns:repeat(2,1fr)}
+  .advice-grid{grid-template-columns:1fr}
+  .advice-grid article{border-bottom:1px solid var(--v-border)}
+  .experience{grid-template-columns:1fr;padding-top:75px}
+  .experience-visual{height:430px}
+  .about,.contact{grid-template-columns:1fr}
+  .contact form{order:2}
+}
+@media(max-width:600px){
+  .topbar{padding:8px 5vw}
+  .header{padding:0 5vw}
+  .brand-mark{width:36px;height:36px}
+  .hero{padding:42px 5vw 65px}
+  h1{font-size:clamp(43px,14vw,65px)}
+  h2{font-size:clamp(36px,11vw,52px)}
+  .hero-art{height:360px;border-radius:24px}
+  .orb{width:270px;height:270px;top:55px}
+  .glasses{transform:translateX(-50%) scale(.78)}
+  .glasses-a{top:145px}
+  .glasses-b{top:245px}
+  .hero-card{padding:13px 15px;min-width:135px}
+  .trust{padding:0 5vw}
+  .trust div{padding:20px 4px}
+  .section,.dark-section{padding-left:5vw;padding-right:5vw}
+  .section{padding-top:70px;padding-bottom:70px}
+  .section-head{margin-bottom:30px}
+  .products{grid-template-columns:1fr;gap:10px}
+  .product-image{height:330px}
+  .product-info{padding:15px 2px 25px}
+  .services{grid-template-columns:1fr;border-radius:12px}
+  .services article{min-height:0;padding:27px 23px}
+  .experience{padding:70px 5vw}
+  .experience-visual{height:320px}
+  .experience-visual strong{font-size:27px}
+  .about-visual{height:310px}
+  .stats{gap:28px}
+  .cta{padding:75px 5vw}
+  .contact form{padding:22px;border-radius:14px}
+  .glass-catalog{margin:35px calc(50% - 50vw)!important;padding:65px 5vw!important}
+  .glass-catalog-grid{grid-template-columns:1fr}
+  .glass-family{padding:20px}
+  .glass-list{grid-template-columns:1fr}
+  .footer{padding-left:5vw;padding-right:5vw}
+}
